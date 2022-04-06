@@ -24,4 +24,6 @@ class TestPub(unittest.TestCase):
         self.pub_1.sell_drink(self.drink_list1, self.customer1)
         self.assertEqual(112, self.pub_1.till)
 
+    def test_sell_drink_function_no_sell(self):
+        self.assertEqual("Please come back lateeeer", self.pub_1.sell_drink(self.drink_list1, self.customer2))
 
