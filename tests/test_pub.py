@@ -2,7 +2,6 @@ import unittest
 from classes.drink import Drink
 from classes.pub import Pub
 from classes.customer import Customer
-from src.drinks_stock import *
 
 class TestPub(unittest.TestCase):
     
