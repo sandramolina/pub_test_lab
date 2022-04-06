@@ -8,3 +8,8 @@ class TestDrink(unittest.TestCase):
     
     def test_drink_name(self):
         self.assertEqual("Beavertown", self.drink_list1.brand_name)
+
+    def test_drink_type(self):
+        self.assertEqual("Beer", self.drink_list1.type)
+
+    
