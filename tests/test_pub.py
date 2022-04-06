@@ -40,3 +40,7 @@ class TestPub(unittest.TestCase):
     def test_drink_stock_levels(self):
         mojito_stock = self.pub_1.drinks_stock[1]["stock_levels"]
         self.assertEqual(40, mojito_stock)
+
+    def test_total_stock(self):
+        total_stock_value = self.pub_1.stock_value_calculator(self.pub_1.drinks_stock)
+        self.assertEqual(630, total_stock_value)
