@@ -1,13 +1,12 @@
 import unittest
 from classes.drink import Drink
-
 from classes.pub import Pub
 
 class TestPub(unittest.TestCase):
     
     def setUp(self):
-        self.drink_list = Drink("Mojito", "Cocktail", 12)
-        self.pub_1 = Pub("SanDraagon", self.drink_list)
+        self.drink_list1 = Drink("Mojito", "Cocktail", 12)
+        self.pub_1 = Pub("SanDraagon", self.drink_list1)
 
     def test_pub_name(self):
         self.assertEqual("SanDraagon", self.pub_1.name)
@@ -16,4 +15,5 @@ class TestPub(unittest.TestCase):
         self.assertEqual(100, self.pub_1.till)
 
     def test_pub_drinks(self):
-        self.assertEqual(self.drink_list, self.pub_1.drinks)
+        self.assertEqual(self.drink_list1, self.pub_1.drinks)
+
