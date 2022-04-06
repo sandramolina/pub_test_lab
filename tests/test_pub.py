@@ -32,7 +32,7 @@ class TestPub(unittest.TestCase):
         self.assertEqual("Please go to sleep", self.pub_1.sell_drink(self.drink_list1, self.customer1))
 
     def test_drink_stock_levels(self):
-        mojito_stock = self.pub_1.drinks_stock[1]["stock_levels"]
+        mojito_stock = self.pub_1.drinks_stock["Mojito"]["stock_levels"]
         self.assertEqual(40, mojito_stock)
 
     def test_total_stock(self):

@@ -19,7 +19,7 @@ class Pub:
     
     def stock_value_calculator(self, stock_list):
         stock_value = 0
-        for i in range(len(stock_list)):
+        for i in stock_list:
             stock_value_drink = stock_list[i]["price"] * stock_list[i]["stock_levels"]
             stock_value += stock_value_drink
         return stock_value
