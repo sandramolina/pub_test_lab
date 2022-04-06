@@ -5,7 +5,7 @@ from classes.pub import Pub
 class TestPub(unittest.TestCase):
     
     def setUp(self):
-        self.drink_list1 = Drink("Mojito", "Cocktail", 12)
+        self.drink_list1 = Drink("Mojito", "Cocktail", 12, 0.10)
         self.pub_1 = Pub("SanDraagon", self.drink_list1)
 
     def test_pub_name(self):
