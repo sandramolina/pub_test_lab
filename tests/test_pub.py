@@ -17,3 +17,8 @@ class TestPub(unittest.TestCase):
     def test_pub_drinks(self):
         self.assertEqual(self.drink_list1, self.pub_1.drinks)
 
+    def test_sell_drink_function(self):
+        self.pub_1.sell_drink(self.drink_list1)
+        self.assertEqual(112, self.pub_1.till)
+
+
