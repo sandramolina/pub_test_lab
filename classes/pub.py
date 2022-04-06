@@ -4,7 +4,9 @@ class Pub:
         self.drinks = input_drinks
         self.till = 100
 
-    def sell_drink(self, drink):
-        self.till += drink.price
-
+    def sell_drink(self, drink, customer):
+        if customer.age >= 18:
+            self.till += drink.price
+        else:
+            return "Please come back lateeeer"
     
