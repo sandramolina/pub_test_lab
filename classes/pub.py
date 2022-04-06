@@ -3,6 +3,7 @@ class Pub:
         self.name = input_name
         self.drinks = input_drinks
         self.till = 100
+        self.drinks_stock = []
 
     def sell_drink(self, drink, customer):
         if customer.age >= 18:
