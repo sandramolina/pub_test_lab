@@ -6,7 +6,11 @@ class Pub:
 
     def sell_drink(self, drink, customer):
         if customer.age >= 18:
-            self.till += drink.price
+            if customer.drunkness < 0.50:
+                self.till += drink.price
+            else:
+                return "Please go to sleep"
+
         else:
             return "Please come back lateeeer"
     
