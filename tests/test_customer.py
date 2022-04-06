@@ -1,12 +1,14 @@
 import unittest
 from classes.customer import *
 from classes.drink import  *
+from classes.food import Food
 
 class TestCustomer(unittest.TestCase):
 
     def setUp(self):
         self.customer1 = Customer("Mad Max", 1000, 29)
         self.first_drink = Drink("Rum and Coke", "cocktail", 8, 0.10)
+        self.food = Food("Fish and Chips", 8, 0.20)
 
     def test_customer_name(self):
         self.assertEqual("Mad Max", self.customer1.name)
@@ -27,3 +29,7 @@ class TestCustomer(unittest.TestCase):
     def test_drunkness_level(self):
         self.customer1.drunkness_level(self.first_drink)
         self.assertEqual(0.10, self.customer1.drunkness)
+    
+    def test_buy_food(self):
+        self.customer1.buy_food(self.food)
+        self.assertEqual(992, self.customer1.wallet)
