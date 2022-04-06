@@ -9,7 +9,7 @@ drinks_stock = [
      "type": "Cocktail",
      "price": 12,
      "alcohol_level": 0.10,
-     "stock_levels": 10
+     "stock_levels": 40
     },
     {"name": "Rum and Coke",
      "type": "Cocktail",

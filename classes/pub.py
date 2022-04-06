@@ -1,9 +1,11 @@
+from src.drinks_stock import *
+
 class Pub:
     def __init__(self, input_name, input_drinks):
         self.name = input_name
         self.drinks = input_drinks
         self.till = 100
-        self.drinks_stock = []
+        self.drinks_stock = drinks_stock
 
     def sell_drink(self, drink, customer):
         if customer.age >= 18:
